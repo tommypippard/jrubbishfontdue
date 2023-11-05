@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  min-height: 70px;
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @include minWidth(desktop) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__link {
+    color: var(--primary_text_color);
+    text-decoration: none;
+  }
+
+  &__item[data-label="cart"] {
+    margin-left: auto;
+  }
+}
